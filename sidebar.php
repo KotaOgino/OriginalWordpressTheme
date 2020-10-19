@@ -7,12 +7,7 @@ $wp_url = get_template_directory_uri();
 <h3 class="uk-heading-line uk-text-center uk-text-lead"><span>カテゴリー</span></h3>
 <ul class="uk-list uk-list-bullet">
 <?php
-$args = [
-    'orderby' => 'id',
-    'order' => 'desc',
-    'hide_empty' => 0,
-];
-$categories = get_categories($args);
+$categories = get_category_list();
 foreach ($categories as $category):
     $cat_link = get_category_link($category->term_id);
     $cat_name = $category->name;
@@ -27,12 +22,12 @@ foreach ($categories as $category):
 <img loading="lazy" class="uk-border-circle" width="40" height="40" src="<?php echo $wp_url; ?>/lib/images/me.jpg" alt="DoshishaBBSについて">
 </div> -->
 <div class="uk-width-expand">
-<h3 class="uk-card-title uk-margin-remove-bottom">DoshishaBBSについて</h3>
+<h3 class="uk-card-title uk-margin-remove-bottom"><?php bloginfo( 'name' ); ?>について</h3>
 </div>
 </div>
 </div>
 <div class="uk-card-body">
-<p>同志社大学の現役学生が同志社大学に関する情報を発信していきます。</p>
+<p><?php bloginfo( 'description' ); ?></p>
 </div>
 <!-- <div class="uk-card-footer">
 <a href="https://twitter.com/Anyushu" class="uk-icon-button uk-margin-small-right" uk-icon="twitter" target="_blank" rel="noopener noreferrer"></a>
