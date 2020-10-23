@@ -5,6 +5,13 @@ get_header();
 ?>
 <section class="uk-section">
 <div class="uk-container">
+<div class="uk-padding uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
+<?php
+if ( function_exists('yoast_breadcrumb') ) {
+yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+}
+?>
+</div>
 <div class="uk-grid-divider" uk-grid>
 <div class="uk-width-expand@m">
 <h2 class="uk-heading-line uk-text-lead"><span><?php single_cat_title(); ?></span></h2>

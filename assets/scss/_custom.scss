@@ -1,0 +1,33 @@
+a {
+    color: $primary;
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+header a, .uk-navbar-toggle{
+    &:hover {
+        color: $navbar-toggle-color!important;
+    }
+}
+
+.blog-content{
+    h2, h3, h4 {
+        padding: 0.25em 0.5em;/*上下 左右の余白*/
+        background: transparent;/*背景透明に*/
+        border-left: solid 5px $primary;/*左線*/
+    }
+}
+
+.primary {
+    color: $primary;
+}
+
+.uk-label {
+    padding: .5rem 1rem;
+}
+
+img .avater {
+    border-radius: 50%;
+}

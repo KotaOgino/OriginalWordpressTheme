@@ -17,6 +17,7 @@ module.exports = {
     },
     plugins: [],
     optimization: {
+        minimize: true,
         minimizer: [
             new TerserPlugin({
                 // コメントを削除

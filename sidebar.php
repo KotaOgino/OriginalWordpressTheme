@@ -4,7 +4,7 @@ $wp_url = get_template_directory_uri();
 ?>
 <aside id="sidebar" class="uk-width-1-3@m">
 <div class="uk-margin-large-bottom">
-<h3 class="uk-heading-line uk-text-center uk-text-lead"><span>カテゴリー</span></h3>
+<h3 class="uk-heading-line uk-text-center uk-text-lead primary"><span>カテゴリー</span></h3>
 <ul class="uk-list uk-list-bullet">
 <?php
 $categories = get_category_list();
@@ -22,12 +22,17 @@ foreach ($categories as $category):
 <img loading="lazy" class="uk-border-circle" width="40" height="40" src="<?php echo $wp_url; ?>/lib/images/me.jpg" alt="DoshishaBBSについて">
 </div> -->
 <div class="uk-width-expand">
-<h3 class="uk-card-title uk-margin-remove-bottom"><?php bloginfo( 'name' ); ?>について</h3>
+<h3 class="uk-card-title uk-margin-remove-bottom uk-padding-small"><?php bloginfo( 'name' ); ?>について</h3>
 </div>
 </div>
 </div>
-<div class="uk-card-body">
+<div class="uk-card-body uk-flex uk-flex-between uk-flex-middle">
+<div>
+<img class="avater" data-src="<?php echo $wp_url; ?>/assets/img/avater.jpg" width="100px" height="100px" alt="アバター" uk-img>
+</div>
+<div>
 <p><?php bloginfo( 'description' ); ?></p>
+</div>
 </div>
 <!-- <div class="uk-card-footer">
 <a href="https://twitter.com/Anyushu" class="uk-icon-button uk-margin-small-right" uk-icon="twitter" target="_blank" rel="noopener noreferrer"></a>

@@ -20,17 +20,26 @@ $img = $wp_url.'/assets/img/no-image.png';
 $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 ?>
 <a class="uk-link-reset" href="<?php echo $permalink; ?>">
-<article>
+<article class="uk-animation-fade">
 <div class="uk-card uk-card-default">
 <div class="uk-card-media-top">
 <?php echo $thumbnail; ?>
 </div>
 <div class="uk-card-body">
 <h3 class="uk-card-title"><?php echo $title; ?></h3>
-<p class="uk-text-right uk-margin-remove"><span class="uk-label"><?php echo $cat_name ?></span></p>
+<div class="uk-flex uk-flex-between uk-flex-middle">
+<div>
+<time datetime="<?php the_modified_time('Y-m-d'); ?>"><span class="uk-margin-small-right" uk-icon="history"></span><?php the_modified_time('Y.m.d'); ?></time>
+</div>
+<div>
+<p class="uk-margin-remove"><span class="uk-label"><?php echo $cat_name ?></span></p>
+</div>
+</div>
 </div>
 </div>
 </article>
 </a>
 <?php endwhile ?>
+<?php else: ?>
+<p class="uk-padding uk-text-lead">投稿がありません。</p>
 <?php endif; ?>

@@ -10,8 +10,8 @@ $title = get_the_title();
 <div class="uk-container">
 <div class="uk-grid-divider" uk-grid>
 <section class="uk-article uk-width-expand@m uk-margin-top"">
-<h2 class="uk-article-title uk-text-bolder"><?php echo $title; ?></h2>
-<div class="main-article uk-margin-top">
+<h2 class="uk-article-title uk-text-bolder uk-padding uk-padding-remove-left uk-padding-remove-right"><?php echo $title; ?></h2>
+<div class="main-article uk-margin-top blog-content">
 <?php the_content(); ?>
 </div>
 </section>

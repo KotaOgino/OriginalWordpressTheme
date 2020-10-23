@@ -1,0 +1,61 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_FILENAME} (.*)\.(jpe?g|png)$
+RewriteCond %{REQUEST_FILENAME}\.webp -f
+RewriteCond %{QUERY_STRING} !type=original
+RewriteRule (.+)\.(jpe?g|png)$ %{REQUEST_FILENAME}.webp [T=image/webp,E=accept:1,L]
+</IfModule>
+<IfModule mod_headers.c>
+Header append Vary Accept env=REDIRECT_accept
+</IfModule>
+AddType image/webp .webp
+# BEGIN SAKURA Internet Inc.
+<IfModule mod_deflate.c>
+    SetOutputFilter DEFLATE
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/x-javascript application/javascript application/ecmascript
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    <FilesMatch "\.(css|js)$">
+        ExpiresDefault "access plus 1 week"
+    </FilesMatch>
+    <FilesMatch "\.(gif|jpe?g|png)$">
+        ExpiresDefault "access plus 1 month"
+    </FilesMatch>
+    ExpiresByType image/webp “access plus 1 weeks”
+</IfModule>
+# END SAKURA Internet Inc.
+
+# BEGIN WordPress
+# "BEGIN WordPress" から "END WordPress" までのディレクティブ (行) は
+# 動的に生成され、WordPress フィルターによってのみ修正が可能です。
+# これらのマーカー間にあるディレクティブへのいかなる変更も上書きされてしまいます。
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN EWWWIO
+# "BEGIN EWWWIO" から "END EWWWIO" までのディレクティブ (行) は
+# 動的に生成され、WordPress フィルターによってのみ修正が可能です。
+# これらのマーカー間にあるディレクティブへのいかなる変更も上書きされてしまいます。
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_FILENAME} (.*)\.(jpe?g|png|gif)$
+RewriteCond %{REQUEST_FILENAME}.webp -f
+RewriteCond %{QUERY_STRING} !type=original
+RewriteRule (.+)\.(jpe?g|png|gif)$ %{REQUEST_URI}.webp [T=image/webp,E=accept:1,L]
+</IfModule>
+<IfModule mod_headers.c>
+Header append Vary Accept env=REDIRECT_accept
+</IfModule>
+AddType image/webp .webp
+# END EWWWIO

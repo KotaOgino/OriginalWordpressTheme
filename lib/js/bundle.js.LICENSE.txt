@@ -1,45 +1,40 @@
-/*
-        Based on:
-        Copyright (c) 2016 Wilson Page wilsonpage@me.com
-        https://github.com/wilsonpage/fastdom
-    */
+/*! exports provided: test */
 
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
+/*! no exports provided */
 
-/* 0 */
+/*! no static exports found */
 
-/* 1 */
+/*!***************************!*\
+  !*** ./assets/js/test.js ***!
+  \***************************/
 
-/* 2 */
+/*!****************************!*\
+  !*** ./assets/js/index.js ***!
+  \****************************/
 
-/* 3 */
+/*!********************************!*\
+  !*** ./assets/scss/style.scss ***!
+  \********************************/
 
-/* 4 */
+/*!*********************************************!*\
+  !*** ./node_modules/uikit/dist/js/uikit.js ***!
+  \*********************************************/
 
-/* 5 */
+/*!***************************************************!*\
+  !*** ./node_modules/uikit/dist/js/uikit-icons.js ***!
+  \***************************************************/
 
-/* 6 */
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
 
-/* easeOutQuad */
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
 
-/* easeOutQuart */
-
-/* global DocumentTouch */
-
-/* global setImmediate */
-
-/* istanbul ignore if  */
-
-/* istanbul ignore next  */
-
-/* usage in css: .uk-name:before { content:"xyz" } */
-
-/*! UIkit 3.5.4 | https://www.getuikit.com | (c) 2014 - 2020 YOOtheme | MIT License */
-
-/*#__PURE__*/
+/*!*********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/sass-loader/dist/cjs.js??ref--5-2!./assets/scss/style.scss ***!
+  \*********************************************************************************************************************************/
 
 /************************************************************************/
 
@@ -47,157 +42,37 @@
 
 /***/
 
-/*@__PURE__*/
-
-// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-
-// @see https://github.com/webpack-contrib/style-loader/issues/177
-
-// Adapted from convert-source-map (MIT)
-
-// CONCATENATED MODULE: ./assets/js/index.js
-
-// CONCATENATED MODULE: ./assets/js/test.js
-
-// CSS Filter
-
 // Check if module is in cache
 
 // Create a new module (and put it into the cache)
 
-// ESM COMPAT FLAG
-
-// EXTERNAL MODULE: ./assets/scss/style.scss
-
-// EXTERNAL MODULE: ./node_modules/uikit/dist/js/uikit.js
-
 // Execute the module function
-
-// Exports
 
 // Flag the module as loaded
 
-// For old IE
-
-// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-
-// Handle Swipe Gesture
-
-// IE 11
-
-// IE 11 can't read background-position-[x|y]
-
-// IE 11 does not return the Set object
-
-// IE 11 does not support responseType 'json'
-
-// IE 11 fix (min-height on a flex container won't apply to its flex items)
-
-// Image
-
-// Inspired by http://paulbourke.net/geometry/pointlineplane/
-
-// JSのインポート
-
-// Let child components be applied at least once first
-
-// Lines are parallel
-
 // Load entry module and return exports
-
-// Module
 
 // Object.prototype.hasOwnProperty.call
 
-// Old chromium based browsers (UC Browser) did not implement `isIntersecting`
-
-// Return an object with the x and y coordinates of the intersection
-
 // Return the exports of the module
-
-// SCSSインポート
-
-// SVG elements do not inherit from HTMLElement
-
-// See above workaround notice
-
-// Special case to return head of iframe instead of iframe itself
-
-// TODO better isToggled handling
-
-// Test for IE <= 9 as proposed by Browserhacks
-
-// Tests for existence of standard globals is to allow style-loader
 
 // The module cache
 
 // The require function
 
-// This will throw an exception if access to iframe is blocked
-
-// UIkitのアイコンインポート
-
-// Update child components first
-
-// Video
-
-// Workaround for iOS 11 bug: https://bugs.webkit.org/show_bug.cgi?id=184250
-
 // __webpack_public_path__
 
-// args strategy
-
-// bg image
-
-// clamp to viewport
-
-// color
-
-// concat strategy
-
-// core functionality
-
 // create a fake namespace object
-
-// css base code, injected by the css-loader
-
-// currently not translate3d in IE, translate3d within translate3d does not work while transitioning
-
-// data strategy
-
-// default strategy
 
 // define __esModule on exports
 
 // define getter function for harmony exports
 
-// due to cross-origin restrictions
-
-// eslint-disable-next-line func-names
-
-// eslint-disable-next-line no-param-reassign
-
-// eslint-disable-next-line prefer-destructuring
-
 // expose the module cache
 
 // expose the modules object (__webpack_modules__)
 
-// extend strategy
-
-// force reflow
-
-// force self-assign
-
 // getDefaultExport function for compatibility with non-harmony modules
-
-// import a list of modules into the list
-
-// in iOS 9.3 force === undefined evaluates to false
-
-// istanbul ignore if
-
-// istanbul ignore next
 
 // mode & 1: value is a module id, require it
 
@@ -207,32 +82,4 @@
 
 // mode & 8|1: behave like require
 
-// on mobile devices (iOS and Android) window.innerHeight !== 100vh
-
-// parabola through (400,500; 600,600; 1800,1200)
-
-// property strategy
-
-// register components
-
-// return the list of modules as css string
-
-// scroll more if we have not reached our destination
-
-// swipe
-
-// tags it will allow on a page
-
-// throttle `scroll` event (Safari triggers multiple `scroll` events per frame)
-
-// to operate correctly into non-standard environments
-
-// transforms
-
-// update strategy
-
 // webpackBootstrap
-
-// workaround for Safari's private browsing mode and accessing sessionStorage in Blink
-
-// オリジナルJSインポート

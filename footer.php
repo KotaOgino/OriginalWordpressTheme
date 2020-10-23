@@ -2,7 +2,7 @@
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 ?>
-</main>
+</body>
 <footer class="uk-padding-small uk-section-muted">
 <div class="uk-container">
 <a class="uk-float-left" href="<?php echo $home; ?>">

@@ -23,14 +23,13 @@ $img = get_the_post_thumbnail_url($id, 'medium');
 <h1 class="uk-h2 uk-text-bolder"><?php echo $title; ?></h1>
 <div class="uk-flex uk-flex-wrap">
 <time class="uk-margin-right" datetime="<?php the_modified_time('Y-m-d'); ?>"><span class="uk-margin-small-right" uk-icon="history"></span><?php the_modified_time('Y.m.d'); ?></time>
-<p class="uk-text-right uk-margin-remove"><span class="uk-label"><?php echo $cat_name ?></span></p>
 </div>
 <?php if ($img != ''): ?>
 <figure>
 <img loading="lazy" class="uk-box-shadow-small uk-width-expand" src="<?php echo $img; ?>" alt="<?php echo $title; ?>">
 </figure>
 <?php endif; ?>
-<div class="main-article">
+<div class="main-article uk-padding uk-padding-remove-bottom uk-padding-remove-left uk-padding-remove-right blog-content">
 <?php the_content(); ?>
 </div>
 </article>

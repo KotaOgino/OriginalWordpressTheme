@@ -7,7 +7,7 @@ get_header();
 <div class="uk-container">
 <div class="uk-grid-divider" uk-grid>
 <div class="uk-width-expand@m">
-<h2 class="uk-heading-line uk-text-lead"><span>記事一覧</span></h2>
+<h2 class="uk-heading-line uk-text-lead primary"><span>最新記事</span></h2>
 <div class="uk-grid-column-medium uk-grid-row-medium uk-child-width-1-2@m" uk-grid>
 <?php get_template_part('template/loop'); ?>
 </div>

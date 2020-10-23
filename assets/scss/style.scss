@@ -1,9 +1,12 @@
-// 1. Your custom variables and variable overwrites.
+// variableのデータを最初に読み込む
 @import "variables";
-// 2. Import default variables and available mixins.
+// 次にUkitを読み込む
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
-// 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
-// 3. Your custom mixin overwrites.
+
+// 独自のSCSS
+// cardに関する記述
 @import "card";
+// 細かい所修正
+@import "custom";
