@@ -1,12 +1,6 @@
-/*! exports provided: test */
-
 /*! no exports provided */
 
 /*! no static exports found */
-
-/*!***************************!*\
-  !*** ./assets/js/test.js ***!
-  \***************************/
 
 /*!****************************!*\
   !*** ./assets/js/index.js ***!

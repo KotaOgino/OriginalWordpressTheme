@@ -2,7 +2,7 @@
 import '../scss/style.scss';
 
 // オリジナルJSインポート
-import { test } from './test'
+// import { test } from './test'
 
 // JSのインポート
 import UIkit from 'uikit';
