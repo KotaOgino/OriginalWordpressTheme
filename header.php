@@ -9,6 +9,7 @@ $wp_url = get_template_directory_uri();
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#7e13ab">
 <?php wp_head(); ?>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -24,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #menu"></a>
 </div>
 <div class="uk-navbar-center">
-<h1 class="uk-margin-remove"><a class="uk-navbar-item uk-text-large" href="<?php echo $home; ?>"><?php bloginfo( 'name' ); ?></a></h1>
+<h1 class="uk-margin-remove"><a class="uk-navbar-item uk-text-large" href="<?php echo $home; ?>"><img width="" height="" alt="" uk-img="data-src: <?php echo $wp_url; ?>/assets/img/logo5.svg" uk-svg></a></h1>
 </div>
 </div>
 </div>
